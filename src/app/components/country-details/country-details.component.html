@@ -1,0 +1,32 @@
+<h1 class="details-title">World Countries</h1>
+<div *ngIf="!isLoading" class="contryDetailsContainer">
+  <div class="countryDetails">
+    <hr />
+    <section class="countryInfo">
+      <h1>{{ countryDetails.name }} ({{ countryDetails.alpha3Code }})</h1>
+      <p>Population: {{ countryDetails.population }} Human Lives Here</p>
+      <p>capital: {{ countryDetails.capital }}</p>
+      <p>
+        currency : {{ countryDetails.currencies[0].code }} ({{
+          countryDetails.currencies[0].symbol
+        }})
+      </p>
+
+      <button class="backBtn" [routerLink]="['/']">Back to countries</button>
+    </section>
+  </div>
+  <hr />
+  <h2 class="align">Borders</h2>
+  <ul>
+    <a class="bordersContainer">
+      <li
+        class="borderItem"
+        *ngFor="let country of countryBorders"
+        [routerLink]="['/country/', country]"
+      >
+        {{ country }}
+      </li>
+    </a>
+  </ul>
+</div>
+<h1 [hidden]="!isLoading" class="align">Loading</h1>

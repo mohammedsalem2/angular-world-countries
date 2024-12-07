@@ -1,0 +1,118 @@
+.home-title {
+  padding: 1rem;
+  color: #3a3b45;
+}
+
+.header {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.16);
+  padding: 1rem 0 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.country-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+}
+
+.filterForm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form {
+  width: 35rem;
+}
+
+.custom-select {
+  position: relative;
+}
+
+.continents {
+  height: 3rem;
+  width: 14rem;
+  font-size: 1.5rem;
+  border: solid 0.5px #3a3b45;
+  color: #303b45;
+  background-color: #ffffff;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background-color: #3a3b45;
+  height: 100%;
+  width: 3em;
+  pointer-events: none;
+  background-image: url(../../../assets/white-down-arrow.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.custom-arrow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.custom-arrow::before {
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-top: 1em solid rebeccapurple;
+}
+
+.country-card {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
+  height: 7rem;
+  width: 20rem;
+  margin: 3rem;
+  border-radius: 4%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  text-align: left;
+  padding: 13px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000000;
+}
+
+.country-details {
+  padding-top: 5px;
+}
+
+.country-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.search-country {
+  font-size: 1.5rem;
+  border-radius: 0%;
+  border: solid 0.5px #3a3b45;
+  color: #303b45;
+  height: 2.8rem;
+  width: 14rem;
+  outline: none;
+  padding: 0 5px;
+}
+
+
+.message {
+  margin-top: 5rem;
+}
